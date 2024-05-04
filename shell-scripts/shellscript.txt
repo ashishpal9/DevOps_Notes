@@ -1,0 +1,195 @@
+when to use shelll and why?
+`1. multipale tasks (automate the same task (manual tasks) through a single script file)
+ 2. series a task with conditional statements
+ 3. conditional statements is good and incease user exerience
+ 4. Documentation can be maintained with the shell script
+ 5. jenkins plugin is not avilable then you can use shell-script for the same.
+ 6. when plugin is not available -> use shell script
+
+ different types of shell 
+
+ cat etc/shells
+
+	# /etc/shells: valid login shells
+	/bin/sh
+	/bin/bash
+	/usr/bin/bash
+	/bin/rbash
+	/usr/bin/rbash
+	/usr/bin/sh
+	/bin/dash
+	/usr/bin/dash
+
+
+What is built-in,Keywords and commands?
+ 
+	type -a (commandname)
+
+	type -a uptime
+	-> uptime is /usr/bin/uptime
+	-> uptime is /bin/uptime
+	
+	type -a echo
+	-> echo is a shell builtin
+	-> echo is /usr/bin/echo
+	-> echo is /bin/echo
+
+	tupe -a pwd
+	-> pwd is a shell builtin
+	-> pwd is /usr/bin/pwd
+	-> pwd is /bin/pwd
+
+ 	type -a if 
+	-> if is a reserved keyword
+
+built in- built in keywords executed instantly. predefined and cnfigured with shell.
+Keywords- defiend on various path and took time to get executed.
+	echo $PATH
+	-> /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+reserved keywords-  special meaning attached to it.
+
+
+
+Print Hello world & print in different colour
+	vim echo.sh
+		#!/bin/bash
+		echo this is our first shell script
+		echo this is my first                          shellscript
+		echo "this is my first                          shellscript"
+		echo 'this is my first                          shellscript'
+
+		#Sucess Message (in green)
+		echo -e "\033[0;32m success message here"
+
+		#Failure Message (in red)
+		echo -e "\033[0;31m Failed message here"
+
+		#Warning Message (in yello)
+		echo -e "\033[0;33m warning message here"
+
+
+	To check manual of a command 
+		man (commandname)
+		 man shell
+
+
+Comment in the Shell script 
+	- used for Documentation , lines which doesn't get executed.
+
+Print Multiple Lines at one place 
+
+    echo "ashish
+    is
+    a
+    devops
+    engineer"
+
+    echo "
+    ########### script starting ##############
+    purpose : going to install linux 
+    ##########################################
+    "
+Print multiple line into single line 
+	echo " ashish \
+	is \
+	herere \
+	"
+
+
+	echo ' ashish \
+	is \
+	herere \
+	'
+
+
+Run Multiple commannds together
+	sudo apt-get update \
+	tomcat9 \
+	mysql
+
+
+
+Provide horizontl and vertical tab
+
+	echo -e " ashish \t is \t great"
+	echo -e "ashish \v is \v great"
+
+Print new line  
+	echo -e "ashish \n is \n great"
+
+
+VARIABLES AND TYPES
+
+	#!/bin/bash
+
+
+	#User Defined variables:-
+
+
+		name="Gaurav" age="30"
+
+		echo $name
+		echo "my name is ${name} and age is ${age}"
+
+		echo ${name}
+		work=swim
+		var=ing
+		echo "i am ${work}${var}"
+
+		echo 'my name is ${name} and age is ${age}'
+
+		#varible name can be :- rules
+
+	# System Defined variables:-
+
+	env
+		echo ${Shell}
+		echo ${HOME}
+		echo ${Ostype}
+		echo ${$}  # process id = 33868
+		echo ${PPID} # parent process id  = 39116
+
+		echo $PWD
+		echo $HOSTNAME
+		echo $UID
+
+		UID=5000 # UID is a readonly variable , can not be changed
+		echo $UID
+
+	echo ${SECONDS}
+
+	sleep 5
+
+	echo ${SECONDS}
+
+
+Take input from USER in Shell script
+
+	#!/bin/bash
+
+	read -p "please enter your name:-" name
+	read -p "please enter your age:-" age
+	read -p "please enter your password:- " -s password # to secure the password , \ 
+												# no one can not watch it while entering
+
+	echo ${REPLAY}
+
+	echo "hello my name is ${name} , age is ${age} \
+	and password is ${password}"
+
+
+CommandLine Arguments in Shell script
+	#
+
+
+
+
+
+
+
+
+
+
+
+
+

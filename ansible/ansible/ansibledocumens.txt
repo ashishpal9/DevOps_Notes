@@ -1,0 +1,34 @@
+WHAT IS YAML? 
+    YAML is a machine readable language which is store data on key:value pair 
+
+
+    Define Array in YAML?
+        Mobiles:
+        -       nokiac6:
+        -       samsungs21
+        -       lenovof56
+
+        Nokiac6:
+                RAM:
+                        size: 4 gb
+                        prize: 8000
+                Price: 18000
+                display: 6inch
+        
+        Vivo_21:
+                RAM:
+                        size; 5 gb
+                        prize: 5000
+                Price: 20000
+                display: 6inch
+                   
+
+
+Difference between Array and Dictionary
+    array are ordered collection and dictionary unordered collection
+    unordered collection = two identical arrays having same key , pairs and attributes is called unordered
+
+
+WHAT is Ansible?
+    ansibe is a tool used for configuration management
+LAb Setup for Ansible / Installation

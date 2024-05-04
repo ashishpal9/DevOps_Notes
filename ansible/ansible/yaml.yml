@@ -1,0 +1,56 @@
+Fruit: APPLE
+Vegetable: Tomato
+Liquid: Water
+
+
+# Array in YAML
+MObiles:
+-       nokiac6
+-       vivo_v5
+-       mi_note_2
+
+
+# Dixtionary
+nokiac6:
+        RAM: 8 gb
+        Price: 15000
+        Display: 6 inch
+VIVOC6:
+        RAM: 15 gb
+        Price: 85000
+        Display: 10 inch
+
+nokiac6:
+        RAM:
+                Size: 4 gb
+                Price: 1515
+        Price: 65000
+        Display: 6 inch
+Vivoc6:
+        RAM:
+                size: 12 gb
+                price: 4545
+        Price: 15151158
+        Dislay: 10 inch
+
+
+
+Mobiles: # Array
+        -
+        Name: nokiac6
+        ram: 5 gb
+        price: 18000
+
+        -
+        Name: SamsungL1
+        RAM: 15gb
+        price: 25000
+
+
+# Difference between Array and Dictionary
+
+  # array are ordered collection and dictionary unordered collection
+  # unordered collection = two identical arrays having same key , pairs and attributes is called unordered
+
+  
+
