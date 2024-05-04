@@ -32,3 +32,6 @@ Difference between Array and Dictionary
 WHAT is Ansible?
     ansibe is a tool used for configuration management
 LAb Setup for Ansible / Installation
+   
+    installation of ansible:-
+	sodo apt install ansible
