@@ -179,13 +179,56 @@ Take input from USER in Shell script
 
 
 CommandLine Arguments in Shell script
-	#
+	
+	#!/bin/bash
+
+	name=${1}
+	age=${2}
+
+	echo " my name is $name and age is ${age}"
+
+
+	RUN THIS COMMAND IN TERMINAL -> ./6_commandlineargs.sh ashish 15
+									 INDEX0                index1 index2
+# ALWAYS PUT VARIABLE INTO {}.
+# ALWAYS DON'T PUT SPACE WHILE DEFINING VARIABLE.
+
+	echo $1
+	echo $2
+	echo $3
+	echo $4
+	echo $11
+	echo $12
+
+	After passing the argument in command line the output be like
+		ashish
+		12
+		23
+		56
+		ashish1
+		ashish2
+
+	that's why we put {} with variables
+	echo ${1}
+	echo ${2}
+	echo ${3}
+	echo ${4}
+	echo ${11}
+	echo ${12}
+
+echo $#
+	it shows how many argumens you have passed in CommandLine
+echo $@
+	shows all the arguments passed in command line
+echo $*
+	shows all the arguments passed in command line
+
+	THERE IS A DIFFERENCE BETWEEN echo $@ & echo $* 
+		that will be discussed in later video
 
 
 
-
-
-
+# STORE AN OUTPUT IN A VARIABLE
 
 
 
